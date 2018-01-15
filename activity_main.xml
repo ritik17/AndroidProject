@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ritik.fragment.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <fragment
+            android:id="@+id/fragment4"
+            android:name="com.example.ritik.fragment.TopSectionFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            tools:layout="@layout/top_section_fragment" />
+
+        <fragment
+            android:id="@+id/fragment5"
+            android:name="com.example.ritik.fragment.BottomPictureFragment"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            tools:layout="@layout/bottom_picture_fragment"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/fragment4"
+            android:layout_alignStart="@+id/fragment4" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
